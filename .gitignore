@@ -1,0 +1,21 @@
+# Ignore all build artifacts
+bin/*
+.vs/
+obj/
+*.suo
+*.user
+*.pdb
+*.log
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.pch
+*.exp
+*.lib
+*.ilk
+*.lib
+*.obj
+*.pch
+*.exp
