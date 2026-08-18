@@ -1,4 +1,4 @@
-# Ignore all build artifacts
+# ─── 构建产物 ───────────────────────────────────────────────
 bin/*
 .vs/
 obj/
@@ -6,16 +6,13 @@ obj/
 *.user
 *.pdb
 *.log
-*.dll
-*.exe
-*.pdb
 *.ilk
 *.obj
 *.pch
 *.exp
-*.lib
-*.ilk
-*.lib
-*.obj
-*.pch
-*.exp
+
+# ─── 单文件发布产物（保留可执行文件，供 MCP 客户端直接调用）───
+# 不再全局忽略 *.exe / *.dll，避免误伤 publish 输出。
+# 如需把发布版 WindbgMcp.exe 纳入版本管理，取消下面注释：
+# !publish/**
+# !publish/*.exe
